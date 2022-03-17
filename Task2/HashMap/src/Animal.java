@@ -1,4 +1,3 @@
-package android;
 
 public class Animal {
     private String sound;
