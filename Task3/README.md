@@ -1,8 +1,8 @@
 # 启发式搜索
 
-**启发式搜索**（Heuristic Search）是一种改进的搜索算法。它在普通搜索算法的基础上引入了**启发式函数** ![formula](https://render.githubusercontent.com/render/math?math=G \left (  X \right ))，该函数的作用是基于已有的信息对搜索的每一个分支选择都做估价，进而选择分支。**简单来说，启发式搜索就是对每一步行动的取和不取都做分析，从中选取更优解或删去无效解。**
+**启发式搜索**（Heuristic Search）是一种改进的搜索算法。它在普通搜索算法的基础上引入了**启发式函数** ![formula](https://render.githubusercontent.com/render/math?math=G%20%5Cleft%20%28%20%20X%20%5Cright%20%29)，该函数的作用是基于已有的信息对搜索的每一个分支选择都做估价，进而选择分支。**简单来说，启发式搜索就是对每一步行动的取和不取都做分析，从中选取更优解或删去无效解。**
 
-请阅读下面 C 语言代码，在本 Markdown 文件中补足启发式搜索中的启发式函数 ![formula](https://render.githubusercontent.com/render/math?math=G \left (  X \right )) 或为其添加启发式函数 ![formula](https://render.githubusercontent.com/render/math?math=G \left (  X \right ))，从而优化原有的搜索算法的搜索效率。如果你对算法模式在 C 语言下的表示还不甚熟悉，你可以使用 **伪代码** 或者 **自然语言** 来进行描述。
+请阅读下面 C 语言代码，在本 Markdown 文件中补足启发式搜索中的启发式函数 ![formula](https://render.githubusercontent.com/render/math?math=G%20%5Cleft%20%28%20%20X%20%5Cright%20%29) 或为其添加启发式函数 ![formula](https://render.githubusercontent.com/render/math?math=G%20%5Cleft%20%28%20%20X%20%5Cright%20%29)，从而优化原有的搜索算法的搜索效率。如果你对算法模式在 C 语言下的表示还不甚熟悉，你可以使用 **伪代码** 或者 **自然语言** 来进行描述。
 
 完成这道题目，你需要掌握搜索算法（尤其是深入优先搜索算法）相关的知识。
 
