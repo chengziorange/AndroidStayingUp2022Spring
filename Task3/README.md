@@ -1,8 +1,8 @@
 # 启发式搜索
 
-**启发式搜索**（Heuristic Search）是一种改进的搜索算法。它在普通搜索算法的基础上引入了**启发式函数** $G \left (  X \right )$，该函数的作用是基于已有的信息对搜索的每一个分支选择都做估价，进而选择分支。**简单来说，启发式搜索就是对每一步行动的取和不取都做分析，从中选取更优解或删去无效解。**
+**启发式搜索**（Heuristic Search）是一种改进的搜索算法。它在普通搜索算法的基础上引入了**启发式函数** ![formula](https://render.githubusercontent.com/render/math?math=G \left (  X \right ))，该函数的作用是基于已有的信息对搜索的每一个分支选择都做估价，进而选择分支。**简单来说，启发式搜索就是对每一步行动的取和不取都做分析，从中选取更优解或删去无效解。**
 
-请阅读下面 C 语言代码，在本 Markdown 文件中补足启发式搜索中的启发式函数 $G \left (  X \right )$ 或为其添加启发式函数 $G \left (  X \right )$，从而优化原有的搜索算法的搜索效率。如果你对算法模式在 C 语言下的表示还不甚熟悉，你可以使用 **伪代码** 或者 **自然语言** 来进行描述。
+请阅读下面 C 语言代码，在本 Markdown 文件中补足启发式搜索中的启发式函数 ![formula](https://render.githubusercontent.com/render/math?math=G \left (  X \right )) 或为其添加启发式函数 ![formula](https://render.githubusercontent.com/render/math?math=G \left (  X \right ))，从而优化原有的搜索算法的搜索效率。如果你对算法模式在 C 语言下的表示还不甚熟悉，你可以使用 **伪代码** 或者 **自然语言** 来进行描述。
 
 完成这道题目，你需要掌握搜索算法（尤其是深入优先搜索算法）相关的知识。
 
@@ -10,11 +10,11 @@
 
 ## 最小距离
 
-有 $m$ 行 $n$ 列的方格挨在一起，第 $x$ 行第 $y$ 列的格子记作 $(x,y)$。
+有 ![formula](https://render.githubusercontent.com/render/math?math=m) 行 ![formula](https://render.githubusercontent.com/render/math?math=n) 列的方格挨在一起，第 ![formula](https://render.githubusercontent.com/render/math?math=x) 行第 ![formula](https://render.githubusercontent.com/render/math?math=y) 列的格子记作 ![formula](https://render.githubusercontent.com/render/math?math=(x,y))。
 
-在不超过边界的情况下你可以向上、下、左、右四个方向移动，离开 $(x,y)$ 的代价为 `DistanceValue[x][y] ` (整型，且 `DistanceValue[x][y]` >= 1)。
+在不超过边界的情况下你可以向上、下、左、右四个方向移动，离开 ![formula](https://render.githubusercontent.com/render/math?math=(x,y)) 的代价为 `DistanceValue[x][y] ` (整型，且 `DistanceValue[x][y]` >= 1)。
 
-求 $(1,1)$ 点到 $(m,n)$ 点的最少代价。
+求 ![formula](https://render.githubusercontent.com/render/math?math=(1,1)) 点到 ![formula](https://render.githubusercontent.com/render/math?math=(m,n)) 点的最少代价。
 
 
 ```c++
@@ -41,9 +41,9 @@ dfs(0,inf,1,1);
 
 ## 拆分小球
 
-把 $N$ 个完全相同的小球分成 $K$ 份，求有多少种分法。
+把 ![formula](https://render.githubusercontent.com/render/math?math=N) 个完全相同的小球分成 ![formula](https://render.githubusercontent.com/render/math?math=K) 份，求有多少种分法。
 
-注: 将 $4$ 个小球分成 $3$ 份，`1 1 2` 和 `2 1 1` 属于同一种分法。
+注: 将 ![formula](https://render.githubusercontent.com/render/math?math=4) 个小球分成 ![formula](https://render.githubusercontent.com/render/math?math=3) 份，`1 1 2` 和 `2 1 1` 属于同一种分法。
 
 ```C++
 void dfs(int LastNumber, int SumNumber, int Residual)
@@ -64,7 +64,7 @@ dfs(1,0,K);
 
 ## 01 反转
 
-给定 $3*3$ 的 01 矩阵
+给定 ![formula](https://render.githubusercontent.com/render/math?math=3*3) 的 01 矩阵
 
 ```
 0 1 1
