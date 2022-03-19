@@ -48,7 +48,7 @@
 
 ### 进阶要求
 
-是时候使用 Kotlin 了！CP 觉得 Java 代码写起来总是缺少一丝优雅。请你学习 Kotlin 的基本语法，并使用 **Kotlin 语言 **完成这个 App。（禁止使用 Android Studio 自带转换工具）
+是时候使用 Kotlin 了！CP 觉得 Java 代码写起来总是缺少一丝优雅。请你学习 Kotlin 的基本语法，并使用 **Kotlin 语言**完成这个 App。（禁止使用 Android Studio 自带转换工具）
 
 ### 说明
 
